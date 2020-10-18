@@ -101,6 +101,7 @@
             alert( "Error en la petición. Intente nuevamente" )
           }else{
             this.roles = response.data;
+            console.log(this.roles);
           }
         }).catch( response => {
           alert( "No es posible conectar con el backend en este momento" );

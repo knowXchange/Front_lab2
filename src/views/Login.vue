@@ -77,9 +77,7 @@
                     }else{
                         localStorage.setItem( 'token', response.data.access_token );
                         this.$router.push('/principal')
-                        // alert( "¡Autenticación Exitosa! El token se ha almacenado en el Local Storage" )
-
-
+                        
                     }
                 } ).catch( error => {
                     if( error.response.status === 400 ){
