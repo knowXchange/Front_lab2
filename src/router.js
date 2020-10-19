@@ -5,6 +5,7 @@ import Login from "./views/Login";
 import Home from "./views/Home";
 import AddRole from "./components/AddRole";
 import CreateCourse from "./components/CreateCourse";
+import seeCourses from "./views/seeCourses"
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       alias: "/iniciar-sesion",
       name: "login",
       component: Login
+    },
+    {
+      path: "/consultar-cursos",
+      name: "consultarCursos",
+      component: seeCourses
     },
     {
       path: "/principal",
